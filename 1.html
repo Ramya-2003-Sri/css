@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    
+    .nav {
+      background-color:black;
+      padding: 10px;
+    }
+
+    .subnav {
+      display: inline-block;
+      position: relative;
+      margin-right: 30px;
+    }
+
+    .subnav h1 {
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 10px;
+      transition: color 0.3s;
+    }
+
+    .subnav h1:hover {
+      color:mediumaquamarine;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: white;
+    box-shadow: 0 8px 16px black;
+      padding: 10px;
+      border-radius: 8px;
+      z-index: 1;
+    }
+
+    .subnav:hover .dropdown {
+      display: block;
+      transition: all 0.5s ease;
+    }
+
+    .dropdown p {
+      margin: 0;
+      padding: 8px;
+      color: #333;
+      transition: background 0.3s;
+    }
+
+    .dropdown p:hover {
+      background-color:whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="subnav">
+      <h1>Courses</h1>
+      <div class="dropdown">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Python</p>
+        <p>SQL</p>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <h1>Tutorials</h1>
+      <div class="dropdown">
+        <p>Python</p>
+        <p>Java</p>
+        <p>DSA</p>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <h1>Practice Editors</h1>
+      <div class="dropdown">
+        <p>VS Code</p>
+        <p>Jupyter</p>
+        <p>Google Colab</p>
+      </div>
+    </div>
+
+    <div class="subnav">
+      <h1>Jobs</h1>
+      <div class="dropdown">
+        <p>Python Developer</p>
+        <p>Java Developer</p>
+        <p>Web Developer</p>
+        <p>Fullstack Developer</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
